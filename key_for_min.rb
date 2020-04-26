@@ -1,6 +1,13 @@
-# prereqs: iterators, hashes, conditional logic
-# Given a hash with numeric values, return the key for the smallest value
+require 'pry'
 
-def key_for_min_value(name_hash)
+#This is the groceries hash we'll be passing in to the get_the_min method
+# groceries = {
+#  dairy: ["milk", "yogurt", "cheese"],
+#  vegetable: ["carrots", "broccoli", "cucumbers"],
+#  meat: ["chicken", "steak", "salmon"],
+#  grains: ["rice", "pasta"]
+# }
 
+def get_the_min(groceries)
+  groceries.values.flatten.min
 end
